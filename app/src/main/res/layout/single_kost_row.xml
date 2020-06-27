@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#ffe6e6"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imgKost"
+            android:layout_width="125dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:background="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/tvNamaKost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Kost"
+            android:layout_toRightOf="@id/imgKost"
+            android:layout_marginLeft="20sp"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/tvFasilitasKost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fasilitas"
+            android:layout_toRightOf="@id/imgKost"
+            android:layout_below="@+id/tvNamaKost"
+            android:layout_marginLeft="20sp"
+            android:textSize="22sp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/tvHargaKost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harga"
+            android:layout_toRightOf="@id/imgKost"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/tvFasilitasKost"
+            android:layout_marginLeft="20sp"
+            android:textSize="20sp"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

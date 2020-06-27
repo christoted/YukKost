@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutBookingKost"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imgKost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="1"
+            android:columnCount="2"
+            android:layout_toRightOf="@+id/imgKost"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/tvTglBookingKost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DD/MM/YYYY"
+                android:textSize="15sp"
+                android:layout_columnWeight="1"/>
+
+            <TextView
+                android:id="@+id/tvIDBookingKost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="BKXXX"
+                android:textSize="15sp" />
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/tvNamaBookingKost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Kost"
+            android:layout_toRightOf="@id/imgKost"
+            android:layout_below="@+id/tvNamaKost"
+            android:layout_marginLeft="20sp"
+            android:textSize="20sp"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/tvFasilitasBookingKost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fasilitas Kost"
+            android:layout_toRightOf="@id/imgKost"
+            android:layout_marginTop="70dp"
+            android:layout_below="@+id/tvFasilitasKost"
+            android:layout_marginLeft="20sp"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

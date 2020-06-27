@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register Page"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tvRegUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textSize="20sp"
+                />
+
+            <EditText
+                android:id="@+id/etRegUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvRegUsername"
+                />
+
+            <TextView
+                android:id="@+id/tvRegPassowrd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etRegUsername"
+                android:text="Password"
+                android:textSize="20sp"
+                />
+
+            <EditText
+                android:id="@+id/etRegPassowrd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvRegPassowrd"
+                android:inputType="textPassword"
+                />
+
+            <TextView
+                android:id="@+id/tvRegConfPassowrd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etRegPassowrd"
+                android:text="Confirm Password"
+                android:textSize="20sp"
+                />
+
+            <EditText
+                android:id="@+id/etRegConfPassowrd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:layout_below="@+id/tvRegConfPassowrd"
+                />
+
+            <TextView
+                android:id="@+id/tvRegPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etRegConfPassowrd"
+                android:text="Phone Number"
+                android:textSize="20sp"
+                />
+
+            <EditText
+                android:id="@+id/etRegPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvRegPhone"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:id="@+id/tvGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:layout_below="@+id/etRegPhone"
+                android:textSize="20sp"
+                />
+
+            <RadioGroup
+                android:id="@+id/rgGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvGender"
+                android:layout_marginTop="10dp">
+
+                <RadioButton
+                    android:id="@+id/rbMale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Male"/>
+
+                <RadioButton
+                    android:id="@+id/rbFemale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Female"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvDOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth"
+                android:layout_below="@+id/rgGender"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                />
+            <Button
+                android:id="@+id/btnPickDOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDOB"
+                android:text="pick"
+                />
+
+            <TextView
+                android:id="@+id/tvDOBRes"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/btnPickDOB"
+                android:layout_height="wrap_content"
+                android:text="Your DOB"
+                android:textSize="20sp"/>
+
+            <GridLayout
+                android:id="@+id/gridLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDOBRes"
+                android:rowCount="2"
+                android:columnCount="2"
+                >
+
+                <CheckBox
+                    android:id="@+id/cbAgree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_columnWeight="0"
+
+                    />
+                <TextView
+                    android:text="I agree with terms and conditions "
+                    android:layout_columnWeight="2"
+                    />
+
+
+            </GridLayout>
+
+            <Button
+                android:id="@+id/btnRegisterPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gridLayout"
+                android:text="Register"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
